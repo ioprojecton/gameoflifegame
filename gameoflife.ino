@@ -116,7 +116,7 @@ void writeNextGeneration() {
     }
   }
   //copy new 2d Array to old
-  for (byte row = 0; row < WIDTH; row++) for (byte col = 0; col < HEIGHT; col++) cells[row][col] = newCells[row][col];
+  for (byte row = 0; row < WIDTH; row++) for (byte col = 0; col < HEIGHT; cells[row][col] = newCells[row][col++]);
 
 }
 //Update pixels
